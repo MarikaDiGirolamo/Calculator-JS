@@ -30,7 +30,14 @@ btnDel.addEventListener("click", function(){
 btnOperator.forEach(btnOperator => {
     btnOperator.addEventListener('click', function(){
         // console.log(numBtn.textContent);
-        display.innerHTML += btnOperator.textContent; //setto i btn egli operatori
+        display.innerHTML += btnOperator.textContent; //setto i btn degli operatori
     });
 });
 
+
+//RESULT
+btnResults.addEventListener("click", function(){
+    // result = eval(display.textContent);
+    display.innerHTML = eval(display.textContent);
+    //È possibile utilizzare la funzione Eval per un'espressione che restituisce una stringa di testo o un valore numerico. È possibile costruire una stringa e quindi passarla alla funzione Eval come se la stringa fosse un'espressione reale. La funzione Eval valuta l'espressione stringa e ne restituisce il valore.
+});
