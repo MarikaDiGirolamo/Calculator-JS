@@ -20,6 +20,8 @@ body {
 .display {
   grid-column: span 4;
   border: 1px solid black;
+  height: 3rem;
+  background-color: blueviolet;
 }
 
 .span-two {
